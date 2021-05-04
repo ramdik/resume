@@ -1,13 +1,131 @@
+@import url(sanitize.css);
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100%;
+  letter-spacing: 1px;
+  /* background-color: #111125; */ /* primary colour */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1,h2,h3,h4 {
+  font-family: 'PT Sans', sans-serif;
+}
+
+ul,li,p,span,a {
+  font-family: 'PT Sans', sans-serif;
+  color: black;
+  text-decoration: none;
+}
+
+/* introduction begin */
+.content-tittle {
+  width:20%;
+  margin:0 0 10px;
+  text-transform:uppercase;
+  background-image:linear-gradient(45deg, #43A497, #547AD1);
+  background-clip:text;
+  -webkit-text-fill-color: transparent;
+}
+
+.intro {
+  width:80%;
+  margin:0 0 50px;
+  line-height:1.5;
+  display: inline-block;
+}
+
+.intro .job-hunt {
+  font-weight:700;
+  background-image:linear-gradient(45deg, #43A497, #547AD1);
+  background-clip:text;
+  -webkit-text-fill-color: transparent;
+}
+
+.intro-p {
+  margin-top:0;
+  font-size: 14px; 
+}
+
+.intro-p > strong {
+  text-transform: uppercase;
+}
+/* Education */
+.education-item {
+  width: 100%;
+}
+
+.educ-wrap {
+  width: 100%;
+}
+
+.educ-wrap > .educ-type {
+  float: right;
+  position: relative;
+}
+
+.education-pls {
+  font-weight:900;
+  margin-bottom: 0;
+}
+
+.education-mjr {
+  margin-bottom: 5px;
+}
+
+.education-mjr > strong {
+  font-weight: 900;
+  font-style: oblique;
+  text-transform: none;
+}
+
+.education-grad {
+  color:grey;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+/* Experience */
+.experience-item {
+  margin-bottom: 30px;
+}
+
+.experience-job {
+  width: 100%;
+}
+
+.experience-pls, .project-tittle {
+  margin-bottom: 0;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+
+.experience-as > strong {
+  font-weight: 900;
+  font-style: oblique;
+  text-transform: none;
+}
+
+.experience-time {
+  float: right;
+  position: relative;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: grey;
+}
+
+.job-desc {
+  padding-left: 20px;
+}
+
+.job-desc > li {
+  margin-bottom: 5px;
+}
+
+/* Projects */
+.project-item {
+  margin-bottom: 10px;
+}
+
+.project-desc {
+  margin-top: 0;
 }
