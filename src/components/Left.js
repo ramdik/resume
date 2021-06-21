@@ -60,17 +60,21 @@ const TextContainer = styled.div`
   justify-content:center;
   align-items: center;
   margin:0 auto;
+  position: relative;
+  z-index: 1;
+  color: whitesmoke;
   & > h2, h3 {
       margin:0;
   }
   & > h2 {
-      color:rgb(184, 184, 184);
       margin-top:150px;
       padding-bottom:40px;
   }
   & > h3 {
-      color:rgb(184, 184, 184);
       padding-top:10px;
+  }
+  & > a {
+    font-size: 70px;
   }
   /* Mobile */
   @media (max-width:600px) {
@@ -78,10 +82,27 @@ const TextContainer = styled.div`
     margin-bottom: 20%;
   }
 `;
+
+const SocialLinks = styled.div`
+  margin-top: 30px;
+  .fa {
+    font-size: 25px;
+    margin: 15px;
+    color: whitesmoke;
+  }
+`;
+
+/* Social Media */
+const SocMed = {
+  instagram: "https://www.instagram.com/ramadhikarizky/",
+  github: "https://github.com/ramdik",
+  youtube: "https://www.youtube.com/channel/UCHtV6lU7t_GHozlrcDt0sVA",
+  facebook: "https://web.facebook.com/ramadika.rizky/",
+}
+
 class Left extends Component {
   render() {
     return (
-      <>
         <LeftContainer>
           <LeftContent>
             <ImgContainer></ImgContainer>
@@ -89,10 +110,23 @@ class Left extends Component {
             <h2>{this.props.greeting}</h2>
             <h3>{this.props.expertiseInfo}</h3>
             <h3>{this.props.currentJob}</h3>
+            <SocialLinks>
+              <a href={SocMed.facebook} target="blank">
+                <i className="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href={SocMed.instagram}>
+                <i className="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+              <a href={SocMed.github}>
+                <i className="fa fa-github" aria-hidden="true"></i>
+              </a>
+              <a href={SocMed.youtube}>
+                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+              </a>
+            </SocialLinks>
             </TextContainer>
           </LeftContent>
         </LeftContainer>
-      </>
     );
   }
 }
