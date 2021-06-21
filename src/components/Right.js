@@ -6,12 +6,21 @@ width:50%;
 height:100%;
 float:right;
 background-color:whitesmoke;
+  //media query
+  @media (max-width: 1000px) {
+    width:100%;
+    display: block;
+    position:static;
+  }
 `;
 
 const RightContent = styled.div`
 padding:50px;
 font-weight:300;
 font-size:14px;
+ @media (max-width: 420px) {
+    padding: 50px 15px;
+ }
 `;
 
 /* Isi */
@@ -56,6 +65,7 @@ const allLink = {
     puyuhkuyWeb:"#",
     dicodingSubmissionWeb:"#",
     dicodingCertificate:"https://www.dicoding.com/certificates/MRZMG4YW0ZYQ",
+    test:"google.com",
 }
 class Right extends Component {
     render() {
@@ -165,6 +175,9 @@ class Right extends Component {
                             </div>
                         </div>
                     </Projects>
+                    <div className="btn-container">
+                    <a className="resume-btn" href={allLink.test}>grab my full pdf resume</a>
+                    </div>
                 </RightContent>
             </RightContainer>
         );

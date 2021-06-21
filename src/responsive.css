@@ -1,0 +1,21 @@
+@media only screen and (max-width: 600px) {
+    .intro {
+        width: 70%;
+        margin-left: 5%;
+    }
+
+    .intro-p {
+        font-size: 14px;
+    }
+    
+    .content-tittle {
+        width:25%;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .experience-time  {
+        float: left;
+    }
+    
+}
