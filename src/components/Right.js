@@ -65,7 +65,7 @@ const allLink = {
     puyuhkuyWeb:"#",
     dicodingSubmissionWeb:"#",
     dicodingCertificate:"https://www.dicoding.com/certificates/MRZMG4YW0ZYQ",
-    test:"google.com",
+    test:"#",
 }
 class Right extends Component {
     render() {
