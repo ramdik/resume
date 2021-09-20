@@ -1,6 +1,6 @@
 {
-  "homepage": "https://ramdik.github.io/resume",
-  "name": "react-web-project",
+  "homepage": "https://ramdik.github.io",
+  "name": "react-portofolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -47,7 +47,7 @@
   "main": "index.js",
   "devDependencies": {
     "babel-plugin-styled-components": "^1.12.0",
-    "gh-pages": "^3.1.0"
+    "gh-pages": "^3.2.3"
   },
   "keywords": [],
   "author": "",
