@@ -92,7 +92,7 @@ class Right extends Component {
                                 <strong>libraries & frameworks: </strong> React, Bootstrap, & Tailwind
                             </p>
                             <p className="intro-p">
-                                <strong>tools: </strong> Github & Git, AdobeXD, Photoshop, Figma
+                                <strong>tools: </strong> Github & Git, Photoshop, Figma (Basic)
                             </p>
                         </div>
                     </Skills>
@@ -117,6 +117,19 @@ class Right extends Component {
                                     <strong>Web Development</strong>
                                 </p>
                                 <p className="intro-p education-grad">graduation: nov 2020</p>
+                            </div>
+                            {/* new */}
+                            <div className="education-item">
+                                <div className="educ-wrap">
+                                    <span className="intro-p education-pls">
+                                        <a href={allLink.dicodingCertificate} target="blank">VSGA - Kominfo</a>
+                                    </span>
+                                    <span className="intro-p education-grad educ-type">Formal</span>
+                                </div>
+                                <p className="intro-p education-mjr">
+                                    <strong>Web Development</strong>
+                                </p>
+                                <p className="intro-p education-grad">graduation: nov 2021</p>
                             </div>
                         </div>
                     </Education>
